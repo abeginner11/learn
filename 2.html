@@ -54,12 +54,8 @@
             30, 31, 30, 31
         ];
         let count = arr[month] || (isLeapYear(year) ? 29 : 28);
-        // 逻辑或，若为二月，第一个值为null,返回第二个值28/29
-
 
         return Array.from(new Array(count), (item, value) => value + 1);
-        // 转换成0-28数组对象再将每个值加一
-
 
 
     };
